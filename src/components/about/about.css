@@ -1,5 +1,6 @@
 .aboutHome {
-  height: auto;
+  height: 800px;
+  margin-bottom: 20%;
 }
 
 .aboutHome #heading {
@@ -19,6 +20,12 @@
 
 .aboutHome .items {
   background-color: #fff;
+  margin-top: 50px;
+  padding: 20px;
+  transition: all ease-in-out 0.9s;
+}
+.aboutHome .item {
+  background-color: #fff;
   margin-top: 30px;
   padding: 20px;
   transition: 0.5s;
@@ -35,11 +42,12 @@
 
 .aboutHome .item h2 {
   font-size: 20px;
-  margin-bottom: 15px;
+  /* margin-bottom: 10px; */
 }
 
 .aboutHome .item p {
   color: #999999;
+  /* margin-bottom: 15px; */
 }
 
 .aboutHome .item:hover {
@@ -47,6 +55,7 @@
   color: #fff;
   cursor: pointer;
   box-shadow: 0 5px 25px -2px rgb(0 0 0 /6);
+  border-radius: 5px;
 }
 
 .aboutHome .item:hover p {
@@ -55,7 +64,7 @@
 
 /* --------awrapper--------- */
 .awrapper {
-  background-image: url(https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjB8fGVkdWNhdGlvbnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60);
+  background-image: url(https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjZ8fGdyYWRpZW50fGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -76,23 +85,22 @@
   font-weight: 500;
 }
 
-.awrapper h3{
+.awrapper h3 {
   font-size: 20px;
   font-weight: 500;
 }
 /* --------awrapper--------- */
 
-@media screen and (max-width: 768px){
+@media screen and (max-width: 768px) {
   .aboutHome .container {
     flex-direction: column-reverse;
   }
 
-  .aboutHome .row{
+  .aboutHome .row {
     width: 100%;
-    
   }
 
-  .awrapper{
+  .awrapper {
     height: 50vh;
   }
 }
