@@ -1,5 +1,5 @@
 .hero {
-  background-image: url(https://images.unsplash.com/photo-1497864149936-d3163f0c0f4b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTd8fGVkdWNhdGlvbnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60);
+  background-image: url(https://w.wallhaven.cc/full/p8/wallhaven-p87xk9.jpg);
   background-size: cover;
   background-attachment: fixed;
   position: absolute;
@@ -30,7 +30,7 @@
   .hero {
     background-position: right;
     padding-top: 50%;
-    height: 80vh;
+    height: 100vh;
   }
   .hero .row {
     width: 100%;
