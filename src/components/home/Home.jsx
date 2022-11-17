@@ -5,15 +5,16 @@ import HAbout from "./HAbout";
 import Hero from "./hero/Hero";
 import Hprice from "./Hprice";
 import CourseHome from "../allcourses/CourseHome";
-// import Testimonial from "./testimonal/Testimonal";
+import Testimonal from "./testimonal/Testimonal";
 
 const Home = () => {
   return (
     <>
       <Hero />
-      <AboutCard/>
+      <AboutCard />
       <CourseHome />
-      
+      <Testimonal />
+      <Hblog />
     </>
   );
 };
