@@ -1,6 +1,7 @@
-import React from "react";
+import React, { useRef, useState } from "react";
 import { faq } from "../../dummydata";
 import Heading from "../common/heading/Heading";
+import "./price.css"
 
 const Faq = () => {
   const [click, setClick] = useState(false);
@@ -11,11 +12,12 @@ const Faq = () => {
     }
     setClick(index);
   };
+
   return (
     <>
-      <Heading subtitle="Faqs" title="Freqeuntly Asked Questions" />
-      <section className=" faq">
-        <div className="contain">
+      <Heading subtitle="FAQS" title="Frequesntly Ask Question" />
+      <section className="faq">
+        <div className="container">
           {faq.map((val, index) => (
             <div className="box">
               <button
@@ -23,14 +25,13 @@ const Faq = () => {
                 onClick={() => toggle(index)}
                 key={index}
               >
-                <h2> {val.title} </h2>
+                <h2>{val.title}</h2>
                 <span>
-                  {" "}
                   {click === index ? (
                     <i className="fa fa-chevron-down"></i>
                   ) : (
                     <i className="fa fa-chevron-right"></i>
-                  )}{" "}
+                  )}
                 </span>
               </button>
               {click === index ? (

@@ -15,6 +15,7 @@ const Home = () => {
       <CourseHome />
       <Testimonal />
       <Hblog />
+      <Hprice />
     </>
   );
 };
